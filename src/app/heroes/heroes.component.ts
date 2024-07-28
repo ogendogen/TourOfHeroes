@@ -26,15 +26,6 @@ export class HeroesComponent {
     this.getHeroes();
   }
 
-  onSelect(hero: Hero): void {
-    if (hero == this.selectedHero) {
-      this.messageService.add(`HeroesComponent: Deselected hero id=${hero.id}`);
-      this.selectedHero = undefined;
-      return;
-    }
-    this.selectedHero = hero;
-    this.messageService.add(`HeroesComponent: Selected hero id=${hero.id}`);  }
-
   getHeroes(): void {
     this.heroService.getHeroes()
       .subscribe(heroes => this.heroes = heroes);
