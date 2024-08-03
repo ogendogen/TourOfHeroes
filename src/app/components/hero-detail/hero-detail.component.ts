@@ -1,9 +1,9 @@
 import {Component, Input, OnInit} from '@angular/core';
-import { Hero } from '../hero';
+import { Hero } from '../../models/hero';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
-import { HeroService } from '../hero.service';
+import { HeroService } from '../../services/hero/hero.service';
 import { Location } from '@angular/common';
 
 @Component({

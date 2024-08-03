@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { debounceTime, distinctUntilChanged, Observable, Subject, switchMap } from 'rxjs';
-import { Hero } from '../hero';
-import { HeroService } from '../hero.service';
+import { Hero } from '../../models/hero';
+import { HeroService } from '../../services/hero/hero.service';
 import { AsyncPipe, NgForOf } from '@angular/common';
 
 @Component({

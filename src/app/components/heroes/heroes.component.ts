@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { Hero } from '../hero';
+import { Hero } from '../../models/hero';
 import { CommonModule, NgFor, NgIf, UpperCasePipe } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HeroDetailComponent } from '../hero-detail/hero-detail.component';
-import { HeroService } from '../hero.service';
-import { MessageService } from '../message.service';
+import { HeroService } from '../../services/hero/hero.service';
+import { MessageService } from '../../services/message/message.service';
 
 @Component({
   selector: 'app-heroes',
